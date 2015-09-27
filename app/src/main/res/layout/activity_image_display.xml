@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.instagramclient.sushmanayak.gridimagesearch.activities.ImageDisplayActivity">
+    
+    <com.instagramclient.sushmanayak.gridimagesearch.helpers.TouchImageView
+        android:id="@+id/ivImageResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="transition" />
+
+</RelativeLayout>
