@@ -12,8 +12,8 @@ The following **required** functionality is completed:
 * [x] User can click on "settings" which allows selection of **advanced search options** to filter results
 * [x] User can configure advanced search filters such as:
   * [x] Size (small, medium, large, extra-large)
-  * [x] Color filter (black, blue, brown, gray, green, etc...)
-  * [x] Type (faces, photo, clip art, line art)
+  * [x] Color filter (black, blue, brown, gray, green, etc...) -> does not seem to work
+  * [x] Type (faces, photo, clip art, line art) -> does not seem to work
   * [x] Site (espn.com)
 * [x] Subsequent searches have any filters applied to the search results
 * [x] User can tap on any image in results to see the image **full-screen**
