@@ -35,16 +35,25 @@ The following **bonus** features are implemented:
 The following **additional** features are implemented:
 
 * [x] Added shared element transition
+* [x] Added a cardview with rounded corners and display of image dimensions
+* [x] Saving the results using Parcelable when device is rotated
+* [x] Added enter and exit window animation for filter settings dialog.
 * [x] Added 'Visit page' icon on the detail page that takes the user to the webpage where the image was found.
 * [x] Added a progress bar in the actionbar that is displayed when data is being fetched.
+
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-![imgsearch.gif](https://github.com/sushmatn/ImageFinder/blob/master/imgsearch.gif)
+![imgsearch2.gif](https://github.com/sushmatn/ImageFinder/blob/master/imgsearch2.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+![EmptyView.png](https://github.com/sushmatn/ImageFinder/blob/master/EmptyView.png)
+![landscape.png](https://github.com/sushmatn/ImageFinder/blob/master/landscape.png)
+![portrait.png](https://github.com/sushmatn/ImageFinder/blob/master/portrait.png)
+
 
 ## Notes
 

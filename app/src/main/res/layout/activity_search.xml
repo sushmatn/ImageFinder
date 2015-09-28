@@ -14,5 +14,15 @@
         app:column_count_portrait="2"
         app:item_margin="@dimen/view_margin" />
 
+    <TextView
+        android:id="@+id/emptyElement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/emptyListMessage"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
 </RelativeLayout>
 

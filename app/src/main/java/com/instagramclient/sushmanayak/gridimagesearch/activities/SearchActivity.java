@@ -10,11 +10,18 @@ import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
+import android.widget.GridLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.etsy.android.grid.StaggeredGridView;
@@ -80,6 +87,10 @@ public class SearchActivity extends AppCompatActivity implements FilterSettingsF
             }
         });
         gvResults.setAdapter(imageResultsAdapter);
+
+        // Create and set the EmptyView
+        TextView emptyView = (TextView)findViewById(R.id.emptyElement);
+        gvResults.setEmptyView(emptyView);
     }
 
     private void setupViews() {

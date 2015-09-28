@@ -16,8 +16,10 @@
     <string name="imgType">Image Type </string>
     <string name="imgColor">Image Color</string>
     <string name="site">From Site </string>
-    <string name="save">Save</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
     <string name="wallpaper">Set Background</string>
+    <string name="emptyListMessage">Click on the search icon to get started</string>
 
     <string-array name="size_array">
         <item>any</item>

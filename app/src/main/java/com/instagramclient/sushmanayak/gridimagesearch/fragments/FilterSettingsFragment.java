@@ -26,13 +26,21 @@ public class FilterSettingsFragment extends DialogFragment {
     Spinner spColor;
     EditText etSite;
     Button btnOK;
+    Button btnCancel;
 
-    public interface SettingsChangedListener{
+    public interface SettingsChangedListener {
         public void onSettingsChanged();
     }
 
     public FilterSettingsFragment() {
         // Required empty public constructor
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        getDialog().getWindow()
+                .getAttributes().windowAnimations = R.style.DialogAnimation;
     }
 
     @Override
@@ -47,6 +55,7 @@ public class FilterSettingsFragment extends DialogFragment {
     }
 
     private void setupViews(View view) {
+
         spSize = (Spinner) view.findViewById(R.id.spSize);
         setSpinnerToValue(spSize, Helper.IMG_SIZE);
 
@@ -66,7 +75,15 @@ public class FilterSettingsFragment extends DialogFragment {
             @Override
             public void onClick(View v) {
                 SaveSettings();
-                ((SettingsChangedListener)getActivity()).onSettingsChanged();
+                ((SettingsChangedListener) getActivity()).onSettingsChanged();
+                dismiss();
+            }
+        });
+
+        btnCancel = (Button) view.findViewById(R.id.btnCancel);
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 dismiss();
             }
         });
