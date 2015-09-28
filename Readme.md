@@ -36,7 +36,7 @@ The following **additional** features are implemented:
 
 * [x] Added shared element transition
 * [x] Added a cardview with rounded corners and display of image dimensions
-* [x] Saving the results using Parcelable when device is rotated
+* [x] Saving the results into Parcelable array in Save/Restore instance state when device is rotated instead of re-fetching data.
 * [x] Added enter and exit window animation for filter settings dialog.
 * [x] Added 'Visit page' icon on the detail page that takes the user to the webpage where the image was found.
 * [x] Added a progress bar in the actionbar that is displayed when data is being fetched.
@@ -50,8 +50,16 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
+Empty View:
+
 ![EmptyView.png](https://github.com/sushmatn/ImageFinder/blob/master/EmptyView.png)
+
+Landscape mode:
+
 ![landscape.png](https://github.com/sushmatn/ImageFinder/blob/master/landscape.png)
+
+Portrait mode:
+
 ![portrait.png](https://github.com/sushmatn/ImageFinder/blob/master/portrait.png)
 
 
